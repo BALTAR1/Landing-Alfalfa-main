@@ -9,7 +9,7 @@ interface GalleryImage {
 }
 
 export default function ImageGallery() {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('campos');
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
 
   // Estas son las imágenes que deberías tener en tu carpeta public/images/gallery/
@@ -126,16 +126,13 @@ export default function ImageGallery() {
   ];
 
   const categories = [
-    { key: 'all', label: 'Todas' },
     { key: 'campos', label: 'Campos' },
     { key: 'proceso', label: 'Proceso' },
     { key: 'productos', label: 'Productos' },
     { key: 'logistica', label: 'Logística' }
   ];
 
-  const filteredImages = selectedCategory === 'all' 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category === selectedCategory);
+  const filteredImages = galleryImages.filter(img => img.category === selectedCategory);
 
   const fallbackContent = (title: string) => (
     <div className="bg-gradient-to-br from-primary-100 to-earth-100 h-full flex items-center justify-center">
