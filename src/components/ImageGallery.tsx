@@ -15,41 +15,114 @@ export default function ImageGallery() {
   // Estas son las imágenes que deberías tener en tu carpeta public/images/gallery/
   const galleryImages: GalleryImage[] = [
     {
-      src: '/images/gallery/campo-alfalfa-1.jpg',
-      alt: 'Campo de alfalfa en San Juan',
+      src: '/campos/im1.jpeg',
+      alt: 'Campo 1',
       category: 'campos',
-      title: 'Campos de Alfalfa Premium'
+      title: 'Campo 1'
     },
     {
-      src: '/images/gallery/campo-alfalfa-2.jpg',
-      alt: 'Cultivo de alfalfa en crecimiento',
+      src: '/campos/im2.jpeg',
+      alt: 'Campo 2',
       category: 'campos',
-      title: 'Proceso de Cultivo'
+      title: 'Campo 2'
     },
     {
-      src: '/images/gallery/cosecha-alfalfa-1.jpg',
-      alt: 'Cosecha de alfalfa',
+      src: '/campos/im3.jpeg',
+      alt: 'Campo 3',
+      category: 'campos',
+      title: 'Campo 3'
+    },
+    {
+      src: '/campos/im4.jpeg',
+      alt: 'Campo 4',
+      category: 'campos',
+      title: 'Campo 4'
+    },
+    {
+      src: '/campos/im5.jpeg',
+      alt: 'Campo 5',
+      category: 'campos',
+      title: 'Campo 5'
+    },
+    {
+      src: '/proceso/imga.jpeg',
+      alt: 'Proceso A',
       category: 'proceso',
-      title: 'Cosecha Especializada'
+      title: 'Proceso A'
     },
     {
-      src: '/images/gallery/fardos-alfalfa-1.jpg',
-      alt: 'Fardos de alfalfa apilados',
+      src: '/proceso/imgb.jpeg',
+      alt: 'Proceso B',
+      category: 'proceso',
+      title: 'Proceso B'
+    },
+    {
+      src: '/proceso/imgc.jpeg',
+      alt: 'Proceso C',
+      category: 'proceso',
+      title: 'Proceso C'
+    },
+    {
+      src: '/proceso/imgd.jpeg',
+      alt: 'Proceso D',
+      category: 'proceso',
+      title: 'Proceso D'
+    },
+    {
+      src: '/proceso/imge.jpeg',
+      alt: 'Proceso E',
+      category: 'proceso',
+      title: 'Proceso E'
+    },
+    {
+      src: '/productos/imagen1.jpeg',
+      alt: 'Producto 1',
       category: 'productos',
-      title: 'Fardos de Alta Calidad'
+      title: 'Producto 1'
     },
     {
-      src: '/images/gallery/pellets-alfalfa-1.jpg',
-      alt: 'Alfalfa pelletizada',
+      src: '/productos/imagen2.jpeg',
+      alt: 'Producto 2',
       category: 'productos',
-      title: 'Alfalfa Pelletizada'
+      title: 'Producto 2'
     },
     {
-      src: '/images/gallery/transporte-1.jpg',
-      alt: 'Camión transportando alfalfa',
+      src: '/productos/imagen3.jpeg',
+      alt: 'Producto 3',
+      category: 'productos',
+      title: 'Producto 3'
+    },
+    // Imágenes de logística desde la carpeta images/logistica
+    {
+      src: '/logistica/img1.jpeg',
+      alt: 'Logística 1',
       category: 'logistica',
-      title: 'Logística Eficiente'
-    }
+      title: 'Logística 1'
+    },
+    {
+      src: '/logistica/img2.jpeg',
+      alt: 'Logística 2',
+      category: 'logistica',
+      title: 'Logística 2'
+    },
+    {
+      src: '/logistica/img3.jpeg',
+      alt: 'Logística 3',
+      category: 'logistica',
+      title: 'Logística 3'
+    },
+    {
+      src: '/logistica/img4.jpeg',
+      alt: 'Logística 4',
+      category: 'logistica',
+      title: 'Logística 4'
+    },
+    {
+      src: '/logistica/img5.jpeg',
+      alt: 'Logística 5',
+      category: 'logistica',
+      title: 'Logística 5'
+    },
   ];
 
   const categories = [
@@ -123,19 +196,7 @@ export default function ImageGallery() {
                   className="h-64 rounded-xl"
                   fallback={fallbackContent(image.title)}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-semibold text-lg">{image.title}</h3>
-                    <p className="text-sm opacity-90">{image.alt}</p>
-                  </div>
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+                {/* Overlay eliminado para que no aparezca nada al hacer hover */}
               </div>
             </div>
           ))}

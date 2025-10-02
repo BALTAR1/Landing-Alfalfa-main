@@ -11,7 +11,7 @@ export default function Products() {
         "Muy persistente",
         "Presentación: bolsas de 25kg tratadas con Cruiser Plus"
       ],
-      image: "/images/IMG-20251001-WA0013.jpg",
+      image: "/productos/imagen1.jpeg",
       fallbackIcon: "🌱"
     },
     {
@@ -23,7 +23,7 @@ export default function Products() {
         "Produce más que CUF 101",
         "Presentación: bolsas de 25kg tratadas con Cruiser Plus"
       ],
-      image: "/images/IMG-20251001-WA0013.jpg",
+      image: "/productos/imagen2.jpeg",
       fallbackIcon: "🌱"
     },
     {
@@ -35,7 +35,7 @@ export default function Products() {
         "Muy productiva",
         "Presentación: bolsas de 25kg tratadas con Cruiser Plus"
       ],
-      image: "/images/IMG-20251001-WA0013.jpg",
+      image: "/productos/imagen3.jpeg",
       fallbackIcon: "🌱"
     }
   ];
@@ -68,11 +68,10 @@ export default function Products() {
             <div key={index} className="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full max-w-xs mx-auto flex flex-col min-h-[420px]">
               {/* Product Image */}
               <div className="bg-white w-full">
-                <OptimizedImage
+                <img
                   src={product.image}
                   alt={`${product.name} - DORGAN ALFALFA San Juan`}
                   className="h-36 w-full object-contain mb-2"
-                  fallback={getProductFallback(product.fallbackIcon, product.name)}
                 />
               </div>
               

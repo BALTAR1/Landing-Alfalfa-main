@@ -103,41 +103,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Features Grid */}
-        <section className="py-12 bg-gradient-to-br from-primary-50 to-earth-100 rounded-2xl mt-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">¿Por qué elegirnos?</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Tres décadas de experiencia nos han convertido en líderes del sector. Descubra las ventajas que nos distinguen en el mercado.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition duration-200">
-              <div className="text-4xl mb-4">✔️</div>
-              <h4 className="text-xl font-semibold text-primary-700 mb-3">Calidad Certificada</h4>
-              <p className="text-gray-600">Nuestros procesos están certificados y cumplimos con los más altos estándares de calidad en la industria.</p>
-              <div className="mt-4 inline-block bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-sm font-semibold">ISO 9001</div>
-            </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition duration-200">
-              <div className="text-4xl mb-4">💲</div>
-              <h4 className="text-xl font-semibold text-primary-700 mb-3">Precios Competitivos</h4>
-              <p className="text-gray-600">Ofrecemos los mejores precios del mercado sin comprometer la calidad de nuestros productos.</p>
-              <div className="mt-4 inline-block bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-sm font-semibold">Hasta 15% menos</div>
-            </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition duration-200">
-              <div className="text-4xl mb-4">⚡</div>
-              <h4 className="text-xl font-semibold text-primary-700 mb-3">Entrega Rápida</h4>
-              <p className="text-gray-600">Red logística propia que garantiza entregas puntuales en toda la región de Cuyo y provincias cercanas.</p>
-              <div className="mt-4 inline-block bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-sm font-semibold">24-48 horas</div>
-            </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition duration-200">
-              <div className="text-4xl mb-4">👥</div>
-              <h4 className="text-xl font-semibold text-primary-700 mb-3">Atención Personalizada</h4>
-              <p className="text-gray-600">Equipo técnico especializado que lo asesora en la elección del producto ideal para su ganado.</p>
-              <div className="mt-4 inline-block bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-sm font-semibold">24/7 disponible</div>
-            </div>
-          </div>
-        </section>
+        {/* Features Grid - Eliminado temporalmente */}
       </div>
     </section>
   );

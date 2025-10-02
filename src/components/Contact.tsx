@@ -32,18 +32,9 @@ export default function Contact() {
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-2 font-medium">Estamos para ayudarte. Contactanos y recibí asesoramiento personalizado.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {/* Ubicación */}
-          <div className="bg-white/80 backdrop-blur-lg border border-emerald-100 rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-emerald-200 duration-300">
-            <div className="bg-emerald-100 p-4 rounded-full mb-4 animate-pulse-slow">
-              <svg className="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-            </div>
-            <h4 className="font-bold text-lg text-emerald-700 mb-1">Ubicación</h4>
-            <p className="text-gray-900 font-semibold text-xl">San Juan Capital</p>
-            <p className="text-gray-500 text-sm">Provincia de San Juan, Argentina</p>
-          </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 justify-center items-stretch">
           {/* Teléfono */}
-          <div className="bg-white/80 backdrop-blur-lg border border-emerald-100 rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-emerald-200 duration-300">
+          <div className="bg-white/80 backdrop-blur-lg border border-emerald-100 rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-emerald-200 duration-300 h-full min-w-[260px] max-w-[320px] mx-auto">
             <div className="bg-emerald-100 p-4 rounded-full mb-4 animate-pulse-slow">
               <svg className="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
             </div>
@@ -52,22 +43,31 @@ export default function Contact() {
             <p className="text-gray-500 text-sm">Lunes a Viernes: 8:00 - 18:00 hs</p>
           </div>
           {/* Email */}
-          <div className="bg-white/80 backdrop-blur-lg border border-emerald-100 rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-emerald-200 duration-300">
+          <div className="bg-white/80 backdrop-blur-lg border border-emerald-100 rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-emerald-200 duration-300 h-full min-w-[260px] max-w-[320px] mx-auto">
             <div className="bg-emerald-100 p-4 rounded-full mb-4 animate-pulse-slow">
               <svg className="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
             </div>
             <h4 className="font-bold text-lg text-emerald-700 mb-1">Email</h4>
-            <a href="mailto:ventas@dorganalfalfa.com.ar" className="text-emerald-700 font-semibold text-xl underline decoration-emerald-400 decoration-2">ventas@dorganalfalfa.com.ar</a>
+            <a href="mailto:ventas@dorganalfalfa.com.ar" className="text-emerald-700 font-semibold text-base md:text-lg lg:text-xl underline decoration-emerald-400 decoration-2 break-all text-center max-w-[220px]">ventas@dorganalfalfa.com.ar</a>
             <p className="text-gray-500 text-sm">Respuesta garantizada en 24 horas</p>
           </div>
           {/* Horarios de Atención */}
-          <div className="bg-white/80 backdrop-blur-lg border border-emerald-100 rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-emerald-200 duration-300">
+          <div className="bg-white/80 backdrop-blur-lg border border-emerald-100 rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-emerald-200 duration-300 h-full min-w-[260px] max-w-[320px] mx-auto">
             <div className="bg-emerald-100 p-4 rounded-full mb-4 animate-pulse-slow">
               <svg className="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             </div>
             <h4 className="font-bold text-lg text-emerald-700 mb-1">Horarios de Atención</h4>
             <p className="text-emerald-700 font-semibold text-xl">8:00 - 18:00 hs</p>
             <p className="text-gray-500 text-sm">Lunes a Viernes | Sábados: 8:00 - 12:00</p>
+          </div>
+          {/* Instagram */}
+          <div className="bg-white/80 backdrop-blur-lg border border-emerald-100 rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-emerald-200 duration-300 h-full min-w-[260px] max-w-[320px] mx-auto">
+            <div className="bg-emerald-100 p-4 rounded-full mb-4 animate-pulse-slow">
+              <svg className="w-10 h-10 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm8.25 2.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM12 7.25A4.75 4.75 0 1 1 7.25 12 4.75 4.75 0 0 1 12 7.25zm0 1.5A3.25 3.25 0 1 0 15.25 12 3.25 3.25 0 0 0 12 8.75z"/></svg>
+            </div>
+            <h4 className="font-bold text-lg text-emerald-700 mb-1">Instagram</h4>
+            <a href="https://instagram.com/dorganalfalfa" target="_blank" rel="noopener noreferrer" className="text-emerald-700 font-semibold text-xl underline decoration-emerald-400 decoration-2">@dorganalfalfa</a>
+            <p className="text-gray-500 text-sm">¡Seguinos para novedades!</p>
           </div>
         </div>
         {/* Nuestra Ubicación Card con botón */}
