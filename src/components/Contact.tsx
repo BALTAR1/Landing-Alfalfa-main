@@ -70,16 +70,19 @@ export default function Contact() {
             <p className="text-gray-500 text-sm">Lunes a Viernes | Sábados: 8:00 - 12:00</p>
           </div>
         </div>
-        {/* Nuestra Ubicación Card */}
-        <div className="bg-gradient-to-br from-emerald-100 via-green-50 to-white rounded-2xl border border-emerald-200 shadow-2xl mt-8 w-full aspect-[16/6] overflow-hidden flex">
-          <iframe
-            title="Ubicación en Google Maps"
-            src="https://www.google.com/maps?q=-31.5375,-68.5364&z=15&output=embed"
-            className="w-full h-full min-h-[220px] md:min-h-[320px] border-0"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        {/* Nuestra Ubicación Card con botón */}
+        <div className="bg-gradient-to-br from-emerald-100 via-green-50 to-white rounded-2xl border border-emerald-200 shadow-2xl mt-8 w-full flex flex-col items-center justify-center py-10">
+          <h3 className="text-2xl font-bold text-emerald-700 mb-2">¿Dónde estamos?</h3>
+          <p className="text-lg text-gray-700 mb-6">San Juan Capital, Provincia de San Juan, Argentina</p>
+          <a
+            href="https://www.google.com/maps?q=-31.5375,-68.5364"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-gradient-to-r from-emerald-500 via-green-400 to-emerald-600 text-white font-semibold text-lg shadow-lg hover:scale-105 hover:shadow-emerald-300 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+          >
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            Ver ubicación en Google Maps
+          </a>
         </div>
       </div>
       <style>{`
